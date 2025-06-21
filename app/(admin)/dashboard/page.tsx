@@ -1,4 +1,5 @@
 // import DashboardMetrics from "@/components/DashboardMetrics";
+import CustomizationForm from "@/components/CustomizationForm";
 import UsernameForm from "@/components/UsernameForm";
 import { Protect } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
@@ -58,7 +59,13 @@ const DashboardPage = async () => {
           </div>
         </div>
       </div>
-      {/* Page Customization form */}
+
+      {/* Page Customization Section */}
+      <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-4 lg:p-8 mb-8">
+        <div className="max-w-7xl mx-auto">
+          <CustomizationForm />
+        </div>
+      </div>
     </div>
   );
 };
