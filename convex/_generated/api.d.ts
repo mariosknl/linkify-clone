@@ -14,6 +14,8 @@ import type {
   FunctionReference,
 } from "convex/server";
 import type * as lib_baseUrl from "../lib/baseUrl.js";
+import type * as lib_customizations from "../lib/customizations.js";
+import type * as lib_links from "../lib/links.js";
 import type * as lib_usernames from "../lib/usernames.js";
 
 /**
@@ -26,6 +28,8 @@ import type * as lib_usernames from "../lib/usernames.js";
  */
 declare const fullApi: ApiFromModules<{
   "lib/baseUrl": typeof lib_baseUrl;
+  "lib/customizations": typeof lib_customizations;
+  "lib/links": typeof lib_links;
   "lib/usernames": typeof lib_usernames;
 }>;
 export declare const api: FilterApi<
