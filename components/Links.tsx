@@ -7,6 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 // import { trackLinkClick } from "@/lib/analytics";
 import { useParams } from "next/navigation";
 import { Doc } from "@/convex/_generated/dataModel";
+import { trackLinkClick } from "@/lib/analytics";
 
 function Links({
   preloadedLinks,
@@ -17,15 +18,15 @@ function Links({
   const params = useParams();
   const username = params.username as string;
 
-  // const handleLinkClick = async (link: Doc<"links">) => {
-  //   // Track the click before navigation
-  //   await trackLinkClick({
-  //     profileUsername: username,
-  //     linkId: link._id,
-  //     linkTitle: link.title,
-  //     linkUrl: link.url,
-  //   });
-  // };
+  const handleLinkClick = async (link: Doc<"links">) => {
+    // Track the click before navigation
+    await trackLinkClick({
+      profileUsername: username,
+      linkId: link._id,
+      linkTitle: link.title,
+      linkUrl: link.url,
+    });
+  };
 
   if (links.length === 0) {
     return (
