@@ -27,6 +27,8 @@ import {
   Copy,
 } from "lucide-react";
 import Link from "next/link";
+import { getBaseUrl } from "@/convex/lib/baseUrl";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   username: z
@@ -152,7 +154,7 @@ const UsernameForm = () => {
       )}
 
       {/* URL Preview */}
-      {/* <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+      <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
         <div className="flex items-center gap-2 mb-2">
           <div className="w-2 h-2 bg-gray-500 rounded-full"></div>
           <span className="text-sm font-medium text-gray-700">
@@ -179,7 +181,7 @@ const UsernameForm = () => {
             <Copy className="w-4 h-4 text-gray-500" />
           </button>
         </div>
-      </div> */}
+      </div>
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
