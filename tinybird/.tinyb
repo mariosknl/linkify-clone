@@ -1,0 +1,14 @@
+{
+    "host": "https://api.europe-west2.gcp.tinybird.co",
+    "id": "9e326da6-305f-42fc-9c78-d76ae9cddb3b",
+    "name": "mariosknl_linkify_youtube",
+    "scope": "user",
+    "token": "p.eyJ1IjogIjllMzI2ZGE2LTMwNWYtNDJmYy05Yzc4LWQ3NmFlOWNkZGIzYiIsICJpZCI6ICIyODk0YTRkNy0xNThmLTRkZTktYTA0MS1mNWVjYzQ3ZTJiYjIiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.hwLkDQavUc92m9CLtazvFreOf9u0wGKqTc_uPyB57lI",
+    "tokens": {
+        "https://api.europe-west2.gcp.tinybird.co": "p.eyJ1IjogIjllMzI2ZGE2LTMwNWYtNDJmYy05Yzc4LWQ3NmFlOWNkZGIzYiIsICJpZCI6ICIyODk0YTRkNy0xNThmLTRkZTktYTA0MS1mNWVjYzQ3ZTJiYjIiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.hwLkDQavUc92m9CLtazvFreOf9u0wGKqTc_uPyB57lI"
+    },
+    "user_email": "mariosknl1987@gmail.com",
+    "user_id": "b9c6dfd6-3274-4649-8a7e-b8e650fadf0a",
+    "user_token": "p.eyJ1IjogImI5YzZkZmQ2LTMyNzQtNDY0OS04YTdlLWI4ZTY1MGZhZGYwYSIsICJpZCI6ICJhNzJjNDBkMi0yYWNhLTQyY2ItYTZhYS00Y2UxMjdmNzA5NjgiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.icD5vFDn8xqc3da1EnXK8cHzeau-cVS141vedu-WJYo",
+    "version": "0.0.1.dev228"
+}
