@@ -1,8 +1,10 @@
 // import DashboardMetrics from "@/components/DashboardMetrics";
 import CustomizationForm from "@/components/CustomizationForm";
+import DashboardMetrics from "@/components/DashboardMetrics";
 import ManageLinks from "@/components/ManageLinks";
 import UsernameForm from "@/components/UsernameForm";
 import { api } from "@/convex/_generated/api";
+import { fetchAnalytics } from "@/lib/analytics-server";
 import { Protect } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 import { preloadQuery } from "convex/nextjs";
@@ -15,7 +17,8 @@ const DashboardPage = async () => {
     userId: user!.id,
   });
 
-  // const analytics = await fetchAnalytics(user!.id);
+  const analytics = await fetchAnalytics(user!.id);
+
   return (
     <div>
       {/* Analytics metris - Premium */}
@@ -51,7 +54,7 @@ const DashboardPage = async () => {
           </div>
         }
       >
-        {/* <DashboardMetrics analytics={analytics} /> */}
+        <DashboardMetrics analytics={analytics} />
       </Protect>
 
       {/* Customize Linktree url form */}
